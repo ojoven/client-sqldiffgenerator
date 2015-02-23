@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ojoven/sqldiffgenerator.git",
-                "reference": "b326004740725b45db3e93ff40925e89318b6e94"
+                "reference": "b267f41225094882d49e2ae7db1b26e465b6c160"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ojoven/sqldiffgenerator/zipball/b326004740725b45db3e93ff40925e89318b6e94",
-                "reference": "b326004740725b45db3e93ff40925e89318b6e94",
+                "url": "https://api.github.com/repos/ojoven/sqldiffgenerator/zipball/b267f41225094882d49e2ae7db1b26e465b6c160",
+                "reference": "b267f41225094882d49e2ae7db1b26e465b6c160",
                 "shasum": ""
             },
             "type": "library",
@@ -30,7 +30,7 @@
                 "source": "https://github.com/ojoven/sqldiffgenerator/tree/master",
                 "issues": "https://github.com/ojoven/sqldiffgenerator/issues"
             },
-            "time": "2015-02-23 10:52:21"
+            "time": "2015-02-23 11:51:23"
         }
     ],
     "packages-dev": [],
