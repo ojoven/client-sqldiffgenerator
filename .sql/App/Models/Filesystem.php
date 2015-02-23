@@ -32,6 +32,7 @@ class Filesystem {
     }
 
     public static function createDirectory($path) {
+        echo $path . PHP_EOL;
         $result = mkdir($path,0755,true);
         if ($result) {
             return $path;
