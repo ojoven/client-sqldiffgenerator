@@ -1,0 +1,6 @@
+{
+  "name": "ojoven/sqldiffgenerator",
+  "scripts": {
+    "post-install-cmd" : "echo 'yes'"
+  }
+}
