@@ -1,1 +1,1 @@
-<?php echo "Just a client"; ?>
+<?php echo "MirenDB client"; ?>
