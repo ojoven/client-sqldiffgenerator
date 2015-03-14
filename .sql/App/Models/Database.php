@@ -32,7 +32,7 @@ class Database {
     public static function dumpDatabase($database,$filename,$config,$type) {
         $command = $config['bins']['mysqldump'] . " -u " . $config[$type]['user'] . " -h " .$config[$type]['host'];
         if ($config[$type]['password']!="") $command .= " -p " . $config[$type]['password'];
-        $command .= " --skip-comments --compact " . $database->getDbName() . " | grep -v '^\/\*![0-9]\{5\}.*\/;$'"; // remove comments
+        $command .= " --skip-comments --compact --databases " . $database->getDbName() . " | grep -v '^\/\*![0-9]\{5\}.*\/;$'"; // remove comments
         $data = shell_exec($command);
         // First, we empty the file
         file_put_contents($filename,'');
