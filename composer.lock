@@ -4,42 +4,38 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0f8634ae89fecc950be85702a3b5235b",
+    "hash": "6eea6b134f1533b1fa2579727926e6e5",
     "packages": [
         {
-            "name": "ojoven/sqldiffgenerator",
+            "name": "ojoven/mirendb",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ojoven/sqldiffgenerator.git",
-                "reference": "bd821c4d4632a970010c90b766a62ca39afdb04a"
+                "url": "https://github.com/ojoven/mirendb.git",
+                "reference": "92a0a2b2c8fb0c2ed7f0148b1351768855ff4a47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ojoven/sqldiffgenerator/zipball/bd821c4d4632a970010c90b766a62ca39afdb04a",
-                "reference": "bd821c4d4632a970010c90b766a62ca39afdb04a",
+                "url": "https://api.github.com/repos/ojoven/mirendb/zipball/92a0a2b2c8fb0c2ed7f0148b1351768855ff4a47",
+                "reference": "92a0a2b2c8fb0c2ed7f0148b1351768855ff4a47",
                 "shasum": ""
             },
             "type": "library",
-            "scripts": {
-                "post-install-cmd": [
-                    "echo 'yes'"
-                ]
-            },
             "support": {
-                "source": "https://github.com/ojoven/sqldiffgenerator/tree/master",
-                "issues": "https://github.com/ojoven/sqldiffgenerator/issues"
+                "source": "https://github.com/ojoven/mirendb/tree/master",
+                "issues": "https://github.com/ojoven/mirendb/issues"
             },
-            "time": "2015-02-23 12:04:15"
+            "time": "2015-03-14 16:38:42"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ojoven/sqldiffgenerator": 20
+        "ojoven/mirendb": 20
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
 }
