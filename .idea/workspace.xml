@@ -2,44 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84098af0-436e-41ac-b6ec-861d782217d5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/App.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Behaviours/Behaviour.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Behaviours/BehaviourFactory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Behaviours/BothDatabaseBehaviour.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Behaviours/BothFileBehaviour.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Behaviours/StandardControlVersionBehaviour.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Lib/Functions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Lib/MysqliDb.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Models/Comparators/DataComparators/DataComparator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Models/Comparators/DataComparators/OptimizedDataComparator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Models/Comparators/DataComparators/StandardDataComparator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Models/Comparators/FieldComparator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Models/Comparators/TableComparator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Models/Database.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Models/Filesystem.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Models/QueryGenerators/DataQueryGenerator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Models/QueryGenerators/FieldsQueryGenerator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Models/QueryGenerators/QueryGenerator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Models/QueryGenerators/TablesQueryGenerator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Models/Result.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/Models/Revision.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/config.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/config.ini.default" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/loader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/App/tmp/empty" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/TODO.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/export_revision.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/revisions/1/revision.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/revisions/2/revision.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/scripts/Lib/ScriptFunctions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/scripts/configurator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/scripts/hooks/git-pre-commit" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sql/scripts/post-install-cmd.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sqlignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.lock" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="client-sqldiffgenerator.iws" />
@@ -151,6 +113,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mirendb_client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client-sqldiffgenerator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mirendb_client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client-sqldiffgenerator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mirendb_client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="revisions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -266,6 +264,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
           <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.sql/revisions/1/revision.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
