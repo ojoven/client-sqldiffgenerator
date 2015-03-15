@@ -1,4 +1,5 @@
-CREATE TABLE `first_table` (
+CREATE TABLE `second_table` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+INSERT INTO `second_table` VALUES (1),(3);

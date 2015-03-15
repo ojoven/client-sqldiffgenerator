@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ojoven/mirendb.git",
-                "reference": "92a0a2b2c8fb0c2ed7f0148b1351768855ff4a47"
+                "reference": "b620bd29acbd9e7423d064483d317efd6548c7da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ojoven/mirendb/zipball/92a0a2b2c8fb0c2ed7f0148b1351768855ff4a47",
-                "reference": "92a0a2b2c8fb0c2ed7f0148b1351768855ff4a47",
+                "url": "https://api.github.com/repos/ojoven/mirendb/zipball/b620bd29acbd9e7423d064483d317efd6548c7da",
+                "reference": "b620bd29acbd9e7423d064483d317efd6548c7da",
                 "shasum": ""
             },
             "type": "library",
@@ -25,7 +25,7 @@
                 "source": "https://github.com/ojoven/mirendb/tree/master",
                 "issues": "https://github.com/ojoven/mirendb/issues"
             },
-            "time": "2015-03-14 16:38:42"
+            "time": "2015-03-15 15:43:51"
         }
     ],
     "packages-dev": [],
