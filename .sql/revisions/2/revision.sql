@@ -1,7 +1,9 @@
 /* Create new tables */
 -- Table `first_table`
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-/*!40101 SET character_set_client = @saved_cs_client */;
+CREATE TABLE `first_table` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+INSERT INTO `first_table` VALUES (1),(2),(3);
 
 

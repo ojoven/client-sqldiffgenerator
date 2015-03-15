@@ -77,7 +77,7 @@ class App {
         if ($this->removedTablesTarget) {
             $data = TablesQueryGenerator::generateQueryRemovedTables($this->removedTablesTarget);
             Result::addToResult($data);
-            $this->log(count($this->removedTablesTarget) . " table(s) removed: " . implode(', ',$this->removedTablesTarget));
+            $this->log("[revision " . $this->currentRevision . "] " . count($this->removedTablesTarget) . " table(s) removed: " . implode(', ',$this->removedTablesTarget));
         }
 
         // New Tables
@@ -85,7 +85,7 @@ class App {
         if ($this->newTablesTarget) {
             $data = TablesQueryGenerator::generateQueryNewTables($this->newTablesTarget,$this->target,$this->config);
             Result::addToResult($data);
-            $this->log(count($this->newTablesTarget) . " table(s) added: " . implode(', ',$this->newTablesTarget));
+            $this->log("[revision " . $this->currentRevision . "] " . count($this->newTablesTarget) . " table(s) added: " . implode(', ',$this->newTablesTarget));
         }
 
     }
@@ -107,7 +107,7 @@ class App {
                     Result::addToResult($data);
                     // We add, too, the table to an array for future data diff comparison
                     array_push($this->tablesWithRemovedFields,$table);
-                    $this->log(count($removedFieldsTableTarget) . " column(s) removed from " . $table . ": " . implode(', ',$removedFieldsTableTarget));
+                    $this->log("[revision " . $this->currentRevision . "] " . count($removedFieldsTableTarget) . " column(s) removed from " . $table . ": " . implode(', ',$removedFieldsTableTarget));
                 }
 
                 // New Fields
@@ -117,7 +117,7 @@ class App {
                     Result::addToResult($data);
                     // We add, too, the table to an array for future data diff comparison
                     array_push($this->tablesWithNewFields,$table);
-                    $this->log(count($removedFieldsTableTarget) . " column(s) added to " . $table . ": " . implode(', ',$newFieldsTableTarget));
+                    $this->log("[revision " . $this->currentRevision . "] " . count($removedFieldsTableTarget) . " column(s) added to " . $table . ": " . implode(', ',$newFieldsTableTarget));
                 }
 
             }
@@ -143,7 +143,7 @@ class App {
                 if ($removedDataTableTarget) {
                     $data = DataQueryGenerator::generateQueryRemovedData($removedDataTableTarget,$table);
                     Result::addToResult($data);
-                    $this->log(count($removedDataTableTarget) . " rows(s) removed from " . $table);
+                    $this->log("[revision " . $this->currentRevision . "] " . count($removedDataTableTarget) . " rows(s) removed from " . $table);
                 }
 
                 // New Data
@@ -151,7 +151,7 @@ class App {
                 if ($newDataTableTarget) {
                     $data = DataQueryGenerator::generateQueryNewData($newDataTableTarget,$table,$this->target);
                     Result::addToResult($data);
-                    $this->log(count($newDataTableTarget) . " rows(s) added to " . $table);
+                    $this->log("[revision " . $this->currentRevision . "] " . count($newDataTableTarget) . " rows(s) added to " . $table);
                 }
 
             }
