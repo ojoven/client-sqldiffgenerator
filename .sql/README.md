@@ -14,21 +14,7 @@ The current status of the project is not stable at all, we're currently developi
 
 To check a rough roadmap please go to http://github.com/ojoven/mirendb/blob/master/TODO.md
 
-Important features like Importing revisions, adding a pull hook, handling multiple developers and merges, are still missing. Please feel free to contribute.
-
-Behaviours
-----------------
-
-MirenDB includes, too, additional behaviours to use it as a tool for single SQL diff generations between 2 SQL files / databases.
-
-At this moment there are 3 different behaviours handled in the tool:
-
-1. BothDatabaseBehaviour -> It generates a SQL file result of **the difference between 2 databases**.
-
-2. BothFileBehaviour -> It generates a SQL file result of **the difference between 2 SQL files**.
-
-3. StandardControlVersionBehaviour -> It takes a database and **generates revision SQL files** when changes are made to it.
-This behaviour is the real final aim of this project, as a tool to ease the databases control version automatically.
+Important features like ~~Importing revisions, adding a pull hook~~, handling multiple developers and merges, are still missing. Please feel free to contribute.
 
 How to use it
 ----------------
@@ -72,7 +58,19 @@ A configurator will ask you in a human way your credentials and preferences:
 Worflow
 ----------------
 The intent of MirenDB is to integrate in your workflow in the most stealthy way as possible. We've already succeeded on integrating
-it with GIT, by installing a pre-commit hook. The hook for staging - after pushing - hasn't been created yet, nor the importing revisions script.
+it with GIT, by installing a pre-commit and a post-merge hook.
+
+So, once the hooks are installed - automatically if you run the configurator - everytime you run:
+
+    git commit -m "Whatever"
+
+MirenDB checks the differences between the already stored revisions and the current DB and it generates a new revision in case they're different.
+
+At the same time, if you run:
+
+    git pull --all
+
+MirenDB imports the revisions into your database, so it updates it in case another developer had updated on his local environment.
 
 Credits
 ----------------
