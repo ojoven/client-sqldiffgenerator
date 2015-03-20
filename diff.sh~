@@ -1,6 +1,0 @@
-#!/bin/bash
-LATESTHEAD=$(\
-    find .git/refs/heads -type f -printf '%T@ %p\n' |\
-    sort    |\
-    tail -1 |\
-    cut -d ' ' -f 2 )
