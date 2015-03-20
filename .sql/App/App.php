@@ -7,6 +7,7 @@ class App {
     // connections
     public $origin;
     public $target;
+    public $staging;
 
     // tables
     public $originTables;
@@ -20,6 +21,12 @@ class App {
     public $result;
     public $currentRevision;
     public $revisionFilename = "revision.sql";
+
+    // import environment
+    public $importEnv;
+
+    // SQL Ignore
+    public $sqlignore;
 
     // dynamic variables, based on first comparators
     public $newTablesTarget = array();

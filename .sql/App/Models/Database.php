@@ -21,6 +21,14 @@ class Database {
         return self::$target;
     }
 
+    /** Get Staging **/
+    public static function getStaging($config) {
+        if (self::$target==null) {
+            self::$target = new MysqliDb($config['staging']['host'],$config['staging']['user'],$config['staging']['password'],$config['staging']['database'],$config['staging']['port']);
+        }
+        return self::$target;
+    }
+
     /**  Get Tables Database **/
     public static function getTablesDatabase($database) {
         $tables = $database->rawQuery("select table_name from information_schema.tables where table_schema='" . $database->getDbName() . "'");
@@ -31,7 +39,7 @@ class Database {
     /**  Dump Database **/
     public static function dumpDatabase($database,$filename,$config,$type) {
         $command = $config['bins']['mysqldump'] . " -u " . $config[$type]['user'] . " -h " .$config[$type]['host'];
-        if ($config[$type]['password']!="") $command .= " -p " . $config[$type]['password'];
+        if ($config[$type]['password']!="") $command .= " -p" . $config[$type]['password'];
         $command .= " --skip-comments --compact " . $database->getDbName() . " | grep -v '^\/\*![0-9]\{5\}.*\/;$'"; // remove comments
         $data = shell_exec($command);
         // First, we empty the file
@@ -61,8 +69,8 @@ class Database {
         file_put_contents($tmpPath,$query);
 
         // Now we import the database via mysql
-        $command = $config['bins']['mysql'] . " -u " . $config['target']['user'] . " -h " .$config['target']['host'];
-        if ($config['target']['password']!="") $command .= " -p " . $config['target']['password'];
+        $command = $config['bins']['mysql'] . " -u " . $config[$type]['user'] . " -h " .$config[$type]['host'];
+        if ($config[$type]['password']!="") $command .= " -p" . $config[$type]['password'];
         $command .= " " . $name . " < " . $tmpPath;
         $data = shell_exec($command);
         unlink($tmpPath);

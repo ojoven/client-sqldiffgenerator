@@ -88,10 +88,17 @@ class StandardControlVersionBehaviour implements Behaviour {
         $this->_validateConfigurationOptions($app);
 
         // Let's make a backup of the current database before importing revisions
-        $app->target = Database::getTarget($app->config);
-        $databaseName = $app->config['target']['database'];
-        $pathToBackup = ROOT_PATH . "App/Backup/" . $databaseName . ".sql";
-        Database::dumpDatabase($app->target, $pathToBackup, $app->config, 'target');
+        if ($app->importEnv=="local") {
+            $app->target = Database::getTarget($app->config);
+            $databaseName = $app->config['target']['database'];
+            $pathToBackup = ROOT_PATH . "App/Backup/" . $databaseName . ".sql";
+            Database::dumpDatabase($app->target, $pathToBackup, $app->config, 'target');
+        } else { // staging
+            $app->staging = Database::getStaging($app->config);
+            $databaseName = $app->config['staging']['database'];
+            $pathToBackup = ROOT_PATH . "App/Backup/" . $databaseName . ".sql";
+            Database::dumpDatabase($app->staging, $pathToBackup, $app->config, 'staging');
+        }
 
         // Let's retrieve the current revisions
         $revisions = Filesystem::getDirectoriesCreateIfNotExist(ROOT_PATH . $app->config['control_version']['path_to_revisions']);
@@ -101,7 +108,7 @@ class StandardControlVersionBehaviour implements Behaviour {
         $query = $revisionModel->generateQueryWithRevisions($app,$revisions);
 
         // Now we run that query
-        Database::createDatabaseFromQuery($databaseName, $query, $app->config, 'target');
+        Database::createDatabaseFromQuery($databaseName, $query, $app->config, 'staging');
 
     }
 
